@@ -8,6 +8,8 @@
 #container {
     display: flex;
     flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -26,7 +28,8 @@ header {
 
 article {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 1rem;
+    background-color: #fff;
 }
 
 article img {
@@ -34,8 +37,10 @@ article img {
 }
 
 article h2 {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 article p {
@@ -53,4 +58,25 @@ article button {
     border: 0;
     font-size: 20px;
     padding: 10px 30px;
+}
+
+ @media screen and (min-width:468px) {
+    
+    #articulos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        flex-basis: 45%;
+    }
+
+    @media screen and (min-width:768px) {
+        article {
+            flex-basis: 29%;
+        }
+    }
+    
+     
 }
