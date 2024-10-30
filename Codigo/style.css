@@ -28,7 +28,7 @@ header {
 
 article {
     text-align: center;
-    margin: 1rem;
+    margin-bottom: 16px;
     background-color: #fff;
 }
 
@@ -69,12 +69,12 @@ article button {
     }
 
     article {
-        flex-basis: 45%;
+        flex: 0 1 calc(100%/2 - 16px/2);
     }
 
     @media screen and (min-width:768px) {
         article {
-            flex-basis: 29%;
+            flex: 0 1 calc(100%/3 - 32px/3)
         }
     }
     
